@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Future Initiative</title>
+
+    <!-- Linked font from Google Fonts (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Linked external CSS files -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a13a465b2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Hero section with headline, description, and CTA buttons -->
+    <header class="hero-section">
+        <div class="home-content">
+            <h1>Together for a Cleaner Tomorrow</h1>
+            <p>Join our mission to create a sustainable, clean future every step of the way.</p>
+            <div class="hero-buttons">
+                <!-- Call to action buttons -->
+                <a class="btn btn-primary" href="./html/volunteer.html">Join Us</a>
+                <a class="btn btn-secondary" href="./html/donation.html">Donate</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Image for hero section -->
+            <img src="./assets/hero-section.png" alt="Hero-section">
+        </div>
+    </header>
+
+    <!-- Main navigation bar -->
+    <nav class="main-nav">
+        <div class="logo">
+            <!-- Website logo -->
+            <a href="./index.html"><img src="./assets/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <!-- Navigation links -->
+            <li><a href="./html/about-us.html">About Us</a></li>
+            <li><a href="./html/blog.html">Blogs</a></li>
+            <li><a href="./html/campaign.html">Campaign</a></li>
+            <li><a href="./html/volunteer.html">Join Us</a></li>
+            <li><a href="./html/contact-us.html">Contact</a></li>
+            <li><a href="./html/report.html">Report</a></li>
+            <!-- Donate button in nav -->
+            <a href="./html/donation.html" class="btn btn-primary"><li>Donate</li></a>
+        </ul>
+    </nav>
+
+    <!-- Mobile navigation bar -->
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/logo.png" alt="Logo"></a>
+        </div>
+        <div class="right-elements">
+            <ul class="mobile-nav-links">
+                <a href="./html/donation.html" class="btn btn-primary"><li>Donate</li></a>
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+        <!-- Slide-in side navigation -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./html/about-us.html">About Us</a>
+            <a href="./html/volunteer.html">Join Us</a>
+            <a href="./html/blog.html">Blogs</a>
+            <a href="./html/campaign.html">Campaigns</a>
+            <a href="./html/contact-us.html">Contact</a>
+            <a href="./html/report.html">Report</a>
+        </div>
+    </nav>
+
+    <!-- Campaigns section with cards -->
+    <section class="campaigns">
+        <h2>Our Campaigns</h2>
+        <div class="campaign-grid">
+            <!-- Campaign card 1 -->
+            <div class="campaign-card">
+                <div class="card-image">
+                    <img src="./assets/campaign-1.png" alt="E-Waste collection">
+                </div>
+                <div class="card-content">
+                    <h3>E-Waste Awareness Drive</h3>
+                    <p>Addressing the growing issue of electronic waste disposal...</p>
+                    <a href="./html/campaign-detail.html" class="card-link">See More →</a>
+                </div>
+            </div>
+            <!-- Campaign card 2 -->
+            <div class="campaign-card">
+                <div class="card-image">
+                    <img src="./assets/campaign-2.png" alt="Urban garden">
+                </div>
+                <div class="card-content">
+                    <h3>Urban Green Spaces Revival</h3>
+                    <p>Focused on transforming underutilized urban areas...</p>
+                    <a href="./html/campaign-detail.html" class="card-link">See More →</a>
+                </div>
+            </div>
+            <!-- Campaign card 3 -->
+            <div class="campaign-card">
+                <div class="card-image">
+                    <img src="./assets/campaign-3.png" alt="River cleanup">
+                </div>
+                <div class="card-content">
+                    <h3>River Rescue Mission</h3>
+                    <p>Aiming to clear plastic and other water pollutants...</p>
+                    <a href="./html/campaign-detail.html" class="card-link">See More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner logos section -->
+    <section class="partners">
+        <h2>Our Proud Partners</h2>
+        <p>Celebrating the organizations driving change with us.</p>
+        <div class="partner-logos">
+            <a href="./html/about-us.html">
+                <div class="logo-row">
+                    <!-- Partner logos row 1 -->
+                    <img src="./assets/partner-1.png" alt="Partner logo">
+                    <img src="./assets/partner-2.png" alt="Partner logo">
+                    <img src="./assets/partner-3.png" alt="Partner logo">
+                    <img src="./assets/partner-4.png" alt="Partner logo">
+                </div>
+                <div class="logo-row">
+                    <!-- Partner logos row 2 -->
+                    <img src="./assets/partner-5.png" alt="Partner logo">
+                    <img src="./assets/partner-6.png" alt="Partner logo">
+                    <img src="./assets/partner-7.png" alt="Partner logo">
+                    <img src="./assets/partner-8.png" alt="Partner logo">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Blog preview section -->
+    <section class="awareness">
+        <div class="section-header">
+            <div>
+                <h2>Spreading Awareness</h2>
+                <p>Discover the latest updates, tips, and success stories.</p>
+            </div>
+            <div>
+                <!-- Button to view all blog posts -->
+                <a href="./html/blog.html" class="btn btn-secondary">View all</a>
+            </div>
+        </div>
+        <div class="blog-posts">
+            <!-- Blog post card 1 -->
+            <a href="./html/blog-detail.html">
+                <div class="blog-card">
+                    <img src="./assets/blog-1.png" alt="Beach cleanup">
+                    <div class="blog-content">
+                        <h3>Turning the Tide on Plastic Pollution</h3>
+                        <p>Learn about innovative solutions...</p>
+                        <div class="blog-author">
+                            <img src="./assets/person-1.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Maria Jane</p>
+                                <p class="post-date">7 Jan 2025 • 5 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Blog post card 2 -->
+            <a href="./html/blog-detail.html">
+                <div class="blog-card">
+                    <img src="./assets/blog-2.png" alt="Eco-friendly home">
+                    <div class="blog-content">
+                        <h3>Green Living Made Simple</h3>
+                        <p>Practical tips for a sustainable lifestyle...</p>
+                        <div class="blog-author">
+                            <img src="./assets/person-2.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Chris Marks</p>
+                                <p class="post-date">15 Jan 2025 • 3 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Blog post card 3 -->
+            <a href="./html/blog-detail.html">
+                <div class="blog-card">
+                    <img src="./assets/blog-3.png" alt="Community cleanup">
+                    <div class="blog-content">
+                        <h3>The Power of Community Clean-ups</h3>
+                        <p>Stories of communities coming together...</p>
+                        <div class="blog-author">
+                            <img src="./assets/person-3.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Emma Daniels</p>
+                                <p class="post-date">22 Jan 2025 • 4 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Help section with report CTA -->
+    <section class="help-section">
+        <h2>How You Can Help?</h2>
+        <p>Your input helps us target urgent clean-up zones.</p>
+        <a class="btn btn-secondary" href="./html/report.html">Report A WasteSpot</a>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-top footer-line">
+            <div class="footer-logo">
+                <img src="./assets/footer-logo.png" alt="Clean Future Initiative Logo">
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <!-- Newsletter signup form -->
+            <div class="newsletter">
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <form class="subscribe-form">
+                    <div class="form-row">
+                        <div class="email-wrapper">
+                            <input type="email" id="footer-email" placeholder="Enter your email">
+                            <div class="footer-error">
+                                <!-- Error messages for validation -->
+                                <div id="footer-email-error" class="error-message">Please enter your email</div>
+                                <div id="footer-email-error-format" class="error-message">Please enter a valid email address</div>
+                            </div>
+                        </div>
+                        <a id="footer-submit" class="btn btn-secondary" href="#">Subscribe</a>
+                    </div>
+                </form>
+                <p class="privacy-note">By subscribing you agree to with our <a href="#">Privacy Policy</a>...</p>
+            </div>
+
+            <!-- Footer columns for quick links -->
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="./html/volunteer.html">Join Us</a></li>
+                    <li><a href="./html/campaign.html">Mission</a></li>
+                    <li><a href="./html/contact-us.html">Contact Us</a></li>
+                    <li><a href="./html/donation.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../html/campaign.html">Campaigns</a></li>
+                    <li><a href="../html/campaign-detail.html">Impact</a></li>
+                    <li><a href="../html/blog.html">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright line -->
+        <div class="footer-line">
+            <p>© 2025 Clean Future Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Popup modal for newsletter subscription -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Thank You for Subscribing!</h3>
+            <p>You've successfully subscribed to our newsletter...</p>
+            <a id="close-btn" class="btn btn-primary" href="#">Close</a>
+        </div>
+    </div>
+
+    <!-- JavaScript files for interactivity -->
+    <script src="./js/newsletter.js"></script>
+    <script src="./js/side-nav.js"></script>
+</body>
+</html>

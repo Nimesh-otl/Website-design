@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Clean Future Initiative</title>
+    <!--linked font from google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--linked css-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Campaign detail specific CSS -->
+    <link rel="stylesheet" href="../css/campaign-detail.css">
+    <!-- Font Awesome library for icons -->
+    <script src="https://kit.fontawesome.com/a13a465b2c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Main navigation for desktop view -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../html/about-us.html">About Us</a></li>
+            <li><a href="../html/blog.html">Blogs</a></li>
+            <li><a href="../html/campaign.html">Campaign</a></li>
+            <li><a href="../html/volunteer.html">Join Us</a></li>
+            <li><a href="../html/contact-us.html">Contact</a></li>
+            <li><a href="../html/report.html">Report</a></li>
+            <a href="../html/donation.html" class="btn btn-primary"><li>Donate</li></a>
+        </ul>
+    </nav>
+    <!-- Mobile navigation with hamburger menu -->
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+        <div class="right-elements">
+            <ul class="mobile-nav-links">
+                <a href="./donation.html" class="btn btn-primary"><li>Donate</li></a>
+                <!-- Hamburger menu icon -->
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+        <!-- Side navigation overlay menu for mobile - hidden by default -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./volunteer.html">Join Us</a>
+            <a href="./blog.html">Blogs</a>
+            <a href="./campaign.html">Campaigns</a>
+            <a href="./contact-us.html">Contact</a>
+            <a href="./report.html">Report</a>>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero section with campaign main image and title -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="../assets/campaign-detail.png" alt="Person collecting plastic from water">
+            </div>
+            <div class="page-title">
+                <h1>Riverbank Restoration Initiative</h1>
+            </div>
+        </section>
+        
+        <!-- Campaign details section with speaker information -->
+        <section class="speaker-section">
+            <div class="container">
+                <!-- Speaker heading and name -->
+                <h2>Speaker</h2>
+                <h3>Tony Stark</h3>
+                
+                <!-- Campaign description and details -->
+                <div class="details">
+                    <h4>Details</h4>
+                    <div class="campaign-description">
+                        <!-- First paragraph explaining campaign focus and efforts -->
+                        <p>This campaign focuses on cleaning up polluted riverbanks, restoring natural habitats, and promoting eco-friendly practices among local communities to ensure sustainable ecosystems. Our efforts include removing plastic and chemical pollutants, planting native vegetation, and constructing buffer zones to prevent future contamination. Through collaborative workshops, we educate locals about sustainable farming and waste disposal techniques that can safeguard water quality. These initiatives not only rejuvenate ecosystems but also improve the quality of life for communities dependent on these water sources.</p>
+                        
+                        <!-- Second paragraph about restoration impact and community involvement -->
+                        <p>Restoring riverbanks plays a vital role in combating soil erosion and ensuring a clean, steady flow of water into nearby habitats. The campaign also encourages community participation through volunteer programs, fostering a collective sense of ownership and responsibility for these natural resources. By bringing together environmental scientists, local authorities, and passionate volunteers, we aim to create lasting change and set a precedent for sustainable water management.</p>
+                    </div>
+                </div>
+                
+                <!-- Call-to-action button to join the campaign -->
+                <div>
+                    <a href="../html/volunteer.html" class="btn btn-secondary">Join Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer section -->
+    <footer>
+        <!--footer section-->
+        <div class="footer-top footer-line">
+            <div class="footer-logo">
+                <img src="../assets/footer-logo.png" alt="Clean Future Initiative Logo">
+            </div>
+        </div>
+        
+        <!-- Footer content with multiple columns -->
+        <div class="footer-links">
+            <!-- Newsletter signup section -->
+            <div class="newsletter">
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <!-- Newsletter subscription form -->
+                <form class="subscribe-form">
+                    <div class="form-row">
+                        <div class="email-wrapper"> 
+                            <input type="email" id="footer-email" placeholder="Enter your email">
+                            <!-- Error message containers for form validation -->
+                            <div class="footer-error">
+                                <div id="footer-email-error" class="error-message">Please enter your email</div>
+                                <div id="footer-email-error-format" class="error-message">Please enter a valid email address</div>
+                            </div>
+                        </div>
+                        <a id="footer-submit" class="btn btn-secondary" href="#">Subscribe</a>
+                    </div>
+                </form>
+                <!-- Privacy policy consent text -->
+                <p class="privacy-note">By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+            </div>
+            <!-- About Us links column -->
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="../html/volunteer.html">Join Us</a></li>
+                    <li><a href="../html/campaign.html">Mission</a></li>
+                    <li><a href="../html/contact-us.html">Contact Us</a></li>
+                    <li><a href="../html/donation.html">Donate</a></li>
+                </ul>
+            </div>
+            <!-- Pages links column -->
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../html/campaign.html">Campaigns</a></li>
+                    <li><a href="../html/campaign-detail.html">Impact</a></li>
+                    <li><a href="../html/blog.html">Blogs</a></li>
+                </ul>
+            </div>
+            <!-- Social media links column -->
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright information -->
+        <div class="footer-line">
+            <p>© 2025 Clean Future Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Popup for newsletter confirmation - hidden by default -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Thank You for Subscribing!</h3>
+            <p>You've successfully subscribed to our newsletter. Stay tuned for updates, stories, and ways to make an impact.</p>
+            <a id="close-btn" class="btn btn-primary" href="#">Close</a>
+        </div>
+    </div>
+    <!-- JavaScript for newsletter functionality -->
+    <script src="../js/newsletter.js"></script>
+    <!-- JavaScript for mobile side navigation -->
+    <script src="../js/side-nav.js"></script>
+</body>
+</html>

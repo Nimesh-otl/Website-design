@@ -1,0 +1,152 @@
+
+/* Hero image styling: scale image to 80% width of its container */
+.hero-image img {
+    width: 80%;
+}
+
+/* Page title section: center aligned with vertical margin */
+.page-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Main heading in the page title with large font and green color */
+.page-title h1 {
+    font-size: 42px;
+    color: #2c5234;
+}
+
+/* Speaker section container with padding and center alignment */
+.speaker-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Speaker section subheading with styling */
+.speaker-section h2 {
+    font-size: 30px;
+    color: #2c5234;
+    margin-bottom: 10px;
+}
+
+/* Speaker name or title with slightly smaller font and spacing */
+.speaker-section h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Container for details section with bottom spacing */
+.details {
+    margin-bottom: 40px;
+}
+
+/* Subheadings within the details section */
+.details h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Campaign description block: centered and justified text */
+.campaign-description {
+    max-width: 800px;          
+    margin: 0 auto;          
+    text-align: justify;       
+}
+
+/* Paragraphs within campaign description with spacing */
+.campaign-description p {
+    margin-bottom: 20px;
+}
+
+
+/* Media query for tablets (768px to 426px) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    /* Container width for tablets */
+    .container {
+        width: 700px;
+    }
+    
+    /* Hero section adjustments */
+    .hero-image img {
+        height: auto;
+    }
+    
+    .page-title h1 {
+        font-size: 36px;
+    }
+    
+    /* Speaker section adjustments */
+    .speaker-section {
+        padding: 30px 5%;
+    }
+    
+    .speaker-section h2 {
+        font-size: 28px;
+    }
+    
+    .speaker-section h3 {
+        font-size: 22px;
+    }
+    
+    /* Campaign description adjustments */
+    .campaign-description {
+        max-width: 90%;
+        padding: 0 15px;
+    }
+}
+
+/* Media query for mobile devices (425px and below) */
+@media screen and (max-width: 425px) {
+
+    /* Hero section adjustments */
+    .hero-image img {
+        height: auto;
+    }
+    
+    .page-title {
+        margin: 20px 0;
+    }
+    
+    .page-title h1 {
+        font-size: 30px;
+    }
+    
+    /* Speaker section adjustments */
+    .speaker-section {
+        padding: 25px 4%;
+    }
+    
+    .speaker-section h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .speaker-section h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .details h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    /* Campaign description adjustments */
+    .campaign-description {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: left;
+    }
+    
+    .campaign-description p {
+        margin-bottom: 15px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    /* Button adjustments */
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

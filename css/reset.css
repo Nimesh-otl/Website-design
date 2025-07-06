@@ -1,0 +1,6 @@
+/* Reset all default margins and paddings, and set box-sizing to border-box for consistent sizing across elements */
+* {
+    margin: 0;                 /* Remove default margin from all elements */
+    padding: 0;                /* Remove default padding from all elements */
+    box-sizing: border-box;   /* Include padding and border in element's total width and height */
+}

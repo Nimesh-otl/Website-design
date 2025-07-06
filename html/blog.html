@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Clean Future Initiative</title>
+    <!--linked font from google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--linked css-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Specific CSS for blog listing page -->
+    <link rel="stylesheet" href="../css/blog.css">
+    
+    <!-- Font Awesome for icons (used in mobile navigation) -->
+    <script src="https://kit.fontawesome.com/a13a465b2c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Main navigation for desktop view -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../html/about-us.html">About Us</a></li>
+            <li><a href="../html/blog.html">Blogs</a></li>
+            <li><a href="../html/campaign.html">Campaign</a></li>
+            <li><a href="../html/volunteer.html">Join Us</a></li>
+            <li><a href="../html/contact-us.html">Contact</a></li>
+            <li><a href="../html/report.html">Report</a></li>
+            <a href="../html/donation.html" class="btn btn-primary"><li>Donate</li></a>
+        </ul>
+    </nav>
+    <!-- Mobile navigation with hamburger menu -->
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+        <div class="right-elements">
+            <ul class="mobile-nav-links">
+                <a href="./donation.html" class="btn btn-primary"><li>Donate</li></a>
+                <!-- Hamburger icon for mobile menu -->
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+        <!-- Side navigation menu for mobile - hidden by default -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./volunteer.html">Join Us</a>
+            <a href="./blog.html">Blogs</a>
+            <a href="./campaign.html">Campaigns</a>
+            <a href="./contact-us.html">Contact</a>
+            <a href="./report.html">Report</a>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero section with main heading and subtitle -->
+        <section class="other-hero">
+            <div>
+                <h1>Insights for a Sustainable </h1>
+                <h1> Tomorrow</h1>
+                <p>Discover the latest updates, tips, and success stories.</p>
+            </div>
+        </section>
+        <!-- Blog listing section with grid layout -->
+        <section class="all-blogs">
+            <div class="blog-grid">
+                
+                <!-- Blog card 1 -->
+                <div class="blog-card">
+                    <a href="./blog-detail.html">
+                        <img src="../assets/blog-1.png" alt="Beach cleanup">
+                        <div class="blog-content">
+                            <h3>Turning the Tide on Plastic Pollution</h3>
+                            <p>Learn about innovative solutions to reducing plastic waste and how you can be part of the change.</p>
+                            <div class="blog-author">
+                                <img src="../assets/person-5.png" alt="Author">
+                                <div class="author-info">
+                                    <p class="author-name">Maria Jane</p>
+                                    <p class="post-date">7 Jan 2025 • 5 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Blog card 2-->
+                <div class="blog-card">
+                    <img src="../assets/blog-2.png" alt="Eco-friendly home">
+                    <div class="blog-content">
+                        <h3>Green Living Made Simple</h3>
+                        <p>Practical tips for people to adopt a more sustainable lifestyle without overwhelming changes.</p>
+                        <div class="blog-author">
+                            <img src="../assets/person-2.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Chris Marks</p>
+                                <p class="post-date">15 Jan 2025 • 3 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog card 3 -->
+                <div class="blog-card">
+                    <img src="../assets/blog-3.png" alt="Community cleanup">
+                    <div class="blog-content">
+                        <h3>The Power of Community Clean-ups</h3>
+                        <p>Stories of communities coming together to reclaim their spaces and the lasting impact they're creating.</p>
+                        <div class="blog-author">
+                            <img src="../assets/person-3.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Emma Daniels</p>
+                                <p class="post-date">22 Jan 2025 • 4 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog card 4 -->
+                <div class="blog-card">
+                    <img src="../assets/blog-4.png" alt="Eco-Friendly Innovations">
+                    <div class="blog-content">
+                        <h3>Eco-Friendly Innovations Shaping Our Future</h3>
+                        <p>Explore groundbreaking technologies and ideas revolutionizing waste management and sustainability practices.</p>
+                        <div class="blog-author">
+                            <img src="../assets/person-4.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Kamala Khan</p>
+                                <p class="post-date">22 Jan 2025 • 4 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog card 5  -->
+                <div class="blog-card">
+                    <img src="../assets/blog-5.png" alt="Trash to Treasure">
+                    <div class="blog-content">
+                        <h3>From Trash to Treasure: Creative Recycling Ideas</h3>
+                        <p>Discover innovative ways people are transforming waste into functional and artistic creations.</p>
+                        <div class="blog-author">
+                            <img src="../assets/person-1.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Carol Danvers</p>
+                                <p class="post-date">22 Jan 2025 • 4 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog card 6  -->
+                <div class="blog-card">
+                    <img src="../assets/blog-6.png" alt="Biodiversity">
+                    <div class="blog-content">
+                        <h3>Why Biodiversity Matters: Protecting Nature's Balance</h3>
+                        <p>Understand the crucial role biodiversity plays in maintaining healthy ecosystems and what we can do to protect it.</p>
+                        <div class="blog-author">
+                            <img src="../assets/person-6.png" alt="Author">
+                            <div class="author-info">
+                                <p class="author-name">Gwen Stacy</p>
+                                <p class="post-date">22 Jan 2025 • 4 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Newsletter subscription section in main content -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Get the latest updates, stories, and ways to make an impact delivered to your inbox.</p>
+                <!-- Newsletter form with validation error messages -->
+                <form class="newsletter-form">
+                    <input type="email" id="main-email" placeholder="Enter your email">
+                    <div id="main-email-error" class="error-message">Please enter your email</div>
+                    <div id="main-email-error-format" class="error-message">Please enter a valid email address</div>
+                    <a id="main-submit" class="btn btn-primary" href="#">Subscribe</a>
+                </form>
+            </div>
+        </section>
+    </main>
+     <footer>
+        <!--footer section-->
+        <div class="footer-top footer-line">
+            <div class="footer-logo">
+                <img src="../assets/footer-logo.png" alt="Clean Future Initiative Logo">
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <div class="newsletter">
+                <!-- Newsletter signup form -->
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <form class="subscribe-form">
+                    <div class="form-row"> 
+                        <div class="email-wrapper">
+                            <input type="email" id="footer-email" placeholder="Enter your email">
+                            <div class="footer-error">
+                                <!-- Error messages for validation -->
+                                <div id="footer-email-error" class="error-message">Please enter your email</div>
+                                <div id="footer-email-error-format" class="error-message">Please enter a valid email address</div>
+                            </div>
+                        </div>
+                        <a id="footer-submit" class="btn btn-secondary" href="#">Subscribe</a>
+                    </div>
+                </form>
+                <p class="privacy-note">By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+            </div>
+            <div class="footer-col">
+                <!-- Footer columns for quick links -->
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="../html/volunteer.html">Join Us</a></li>
+                    <li><a href="../html/campaign.html">Mission</a></li>
+                    <li><a href="../html/contact-us.html">Contact Us</a></li>
+                    <li><a href="../html/donation.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../html/campaign.html">Campaigns</a></li>
+                    <li><a href="../html/campaign-detail.html">Impact</a></li>
+                    <li><a href="../html/blog.html">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-line">
+            <!-- Copyright line -->
+            <p>© 2025 Clean Future Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Popup for newsletter confirmation - hidden by default -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Thank You for Subscribing!</h3>
+            <p>You've successfully subscribed to our newsletter. Stay tuned for updates, stories, and ways to make an impact.</p>
+            <a id="close-btn" class="btn btn-primary" href="#">Close</a>
+        </div>
+    </div>
+    <!-- JavaScript files for functionality -->
+    <!-- Script for newsletter subscription form handling -->
+    <script src="../js/newsletter.js"></script>
+    <!-- Script for mobile side navigation functionality -->
+    <script src="../js/side-nav.js"></script>
+</body>
+</html>

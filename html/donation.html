@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata and external resources -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean Future Initiative</title>
+  
+  <!-- Google Fonts preconnect and import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Linked CSS files -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/donation.css">
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a13a465b2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Desktop Navigation Bar -->
+  <nav class="main-nav">
+    <div class="logo">
+      <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../html/about-us.html">About Us</a></li>
+      <li><a href="../html/blog.html">Blogs</a></li>
+      <li><a href="../html/campaign.html">Campaign</a></li>
+      <li><a href="../html/volunteer.html">Join Us</a></li>
+      <li><a href="../html/contact-us.html">Contact</a></li>
+      <li><a href="../html/report.html">Report</a></li>
+      <a href="../html/donation.html" class="btn btn-primary"><li>Donate</li></a>
+    </ul>
+  </nav>
+  
+  <!-- Mobile Navigation Bar -->
+  <nav class="mobile-nav">
+    <div class="logo">
+      <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+    </div>
+    <div class="right-elements">
+      <ul class="mobile-nav-links">
+        <a href="./donation.html" class="btn btn-primary"><li>Donate</li></a>
+        <li><i class="fa-solid fa-bars"></i></li>
+      </ul>
+    </div>
+    
+    <!-- Side navigation for mobile view -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./about-us.html">About Us</a>
+      <a href="./volunteer.html">Join Us</a>
+      <a href="./blog.html">Blogs</a>
+      <a href="./campaign.html">Campaigns</a>
+      <a href="./contact-us.html">Contact</a>
+      <a href="./report.html">Report</a>
+    </div>
+  </nav>
+  
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Be the Change: Support a Cleaner Future</h1>
+      <h4>Your contributions fuel our efforts for a cleaner environment.</h4>
+    </div>
+  </section>
+  
+  <!-- Hall of Fame section -->
+  <section class="hall-of-fame">
+    <div class="container">
+      <h2>Our Hall Of Fame</h2>
+      <p>Recognizing the incredible individuals and organizations making a significant impact.</p>
+      
+      <div class="donors-container">
+        <!-- Donor card 1 -->
+        <div class="donor-card">
+          <div class="donor-info">
+            <img src="../assets/donor-1.png" alt="Max Gladstone" class="donor-img">
+            <div class="donor-details">
+              <h3>Max Gladstone</h3>
+              <p class="donation-amount">Rs: 190,000</p>
+            </div>
+          </div>
+          <p class="donation-thank-you">Thank You For Your Donation</p>
+        </div>
+        
+        <!-- Donor card 2 -->
+        <div class="donor-card">
+          <div class="donor-info">
+            <img src="../assets/donor-2.png" alt="Alex Michaelides" class="donor-img">
+            <div class="donor-details">
+              <h3>Alex Michaelides</h3>
+              <p class="donation-amount">Rs: 100,000</p>
+            </div>
+          </div>
+          <p class="donation-thank-you">Thank You For Your Donation</p>
+        </div>
+        
+        <!-- Donor card 3 -->
+        <div class="donor-card">
+          <div class="donor-info">
+            <img src="../assets/donor-3.png" alt="Brandon Sanderson" class="donor-img">
+            <div class="donor-details">
+              <h3>Brandon Sanderson</h3>
+              <p class="donation-amount">Rs: 90,000</p>
+            </div>
+          </div>
+          <p class="donation-thank-you">Thank You For Your Donation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Donation form section -->
+  <section class="payment-section">
+    <div class="container">
+      <h2>Payment Method</h2>
+      
+      <!-- Donation form -->
+      <form class="info-form">
+        <div class="form-group">
+          <label for="name">Name on Invoice</label>
+          <input type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" name="card-number" placeholder="Placeholder">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="amount">Donation Amount</label>
+            <input type="text" id="amount" name="amount">
+          </div>
+          
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
+        </div>
+        
+        <div class="form-group">
+          <label for="country">Country</label>
+          <div class="select-wrapper">
+            <select id="country" name="country">
+              <option value="">Select one...</option>
+              <!-- Country options -->
+              <option value="afghanistan">Afghanistan</option>
+              <option value="australia">Australia</option>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="canada">Canada</option>
+              <option value="germany">Germany</option>
+              <option value="india">India</option>
+              <option value="japan">Japan</option>
+              <option value="nepal">Nepal</option>
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="united-states">United States</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+          </div>
+          
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+          </div>
+          
+          <div class="form-group">
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="postal-code" name="postal-code">
+          </div>
+        </div>
+        
+        <div class="form-actions">
+          <a href="#" class="btn btn-secondary">Back</a>
+          <a href="#" class="btn btn-primary">Submit</a>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Section encouraging volunteer support -->
+  <section class="help-section">
+    <h2>More Ways To Help</h2>
+    <p>Your time and effort can change the world.</p>
+    <div class="join-button-container">
+      <a href="../html/volunteer.html" class="btn btn-secondary">Join Us</a>
+    </div>
+  </section>
+  
+  <!-- Website Footer -->
+  <footer>
+    <div class="footer-top footer-line">
+      <div class="footer-logo">
+        <img src="../assets/footer-logo.png" alt="Clean Future Initiative Logo">
+      </div>
+    </div>
+    
+    <!-- Footer columns -->
+    <div class="footer-links">
+      <!-- Newsletter column -->
+      <div class="newsletter">
+        <p>Join our newsletter to stay up to date on features and releases.</p>
+        <form class="subscribe-form">
+          <div class="form-row">
+            <div class="email-wrapper"> 
+              <input type="email" id="footer-email" placeholder="Enter your email">
+              <div class="footer-error">
+                <div id="footer-email-error" class="error-message">Please enter your email</div>
+                <div id="footer-email-error-format" class="error-message">Please enter a valid email address</div>
+              </div>
+            </div>
+            <a id="footer-submit" class="btn btn-secondary" href="#">Subscribe</a>
+          </div>
+        </form>
+        <p class="privacy-note">By subscribing you agree to our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+      </div>
+      
+      <!-- About Us links -->
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="../html/volunteer.html">Join Us</a></li>
+          <li><a href="../html/campaign.html">Mission</a></li>
+          <li><a href="../html/contact-us.html">Contact Us</a></li>
+          <li><a href="../html/donation.html">Donate</a></li>
+        </ul>
+      </div>
+      
+      <!-- Pages links -->
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../html/campaign.html">Campaigns</a></li>
+          <li><a href="../html/campaign-detail.html">Impact</a></li>
+          <li><a href="../html/blog.html">Blogs</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social media links -->
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="footer-line">
+      <p>© 2025 Clean Future Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Popup: Newsletter subscription success -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Thank You for Subscribing!</h3>
+      <p>You've successfully subscribed to our newsletter. Stay tuned for updates, stories, and ways to make an impact.</p>
+      <a id="close-btn" class="btn btn-primary" href="#">Close</a>
+    </div>
+  </div>
+  
+  <!-- Popup: Donation success -->
+  <div id="success-popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Thank you for your donation!</h3>
+      <p>Your contribution helps us create a cleaner future.</p>
+      <a id="success-close-btn" class="btn btn-primary" href="#">Close</a>
+    </div>
+  </div>
+  
+  <!-- Popup: Confirmation before clearing form -->
+  <div id="confirm-popup" class="popup">
+    <div class="popup-content">
+      <h3>Are you sure?</h3>
+      <p>Going back will clear all your data. This action cannot be undone.</p>
+      <div class="popup-buttons">
+        <a id="confirm-no-btn" class="btn btn-secondary" href="#">No, continue editing</a>
+        <a id="confirm-yes-btn" class="btn btn-primary" href="#">Yes, go back</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Duplicate newsletter popup (may need cleanup if unintentional) -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Thank You for Subscribing!</h3>
+      <p>You've successfully subscribed to our newsletter. Stay tuned for updates, stories, and ways to make an impact.</p>
+      <a id="close-btn" class="btn btn-primary" href="#">Close</a>
+    </div>
+  </div>
+  
+  <!-- JavaScript files -->
+  <script src="../js/newsletter.js"></script>
+  <script src="../js/donate.js"></script>
+  <script src="../js/side-nav.js"></script>
+</body>
+</html>

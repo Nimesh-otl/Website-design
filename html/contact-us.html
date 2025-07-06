@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta and Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Future Initiative</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact-us.css">
+    
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a13a465b2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Main Navigation for Desktop -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../html/about-us.html">About Us</a></li>
+            <li><a href="../html/blog.html">Blogs</a></li>
+            <li><a href="../html/campaign.html">Campaign</a></li>
+            <li><a href="../html/volunteer.html">Join Us</a></li>
+            <li><a href="../html/contact-us.html">Contact</a></li>
+            <li><a href="../html/report.html">Report</a></li>
+            <!-- Call-to-action button for donations -->
+            <a href="../html/donation.html" class="btn btn-primary"><li>Donate</li></a>
+        </ul>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+        </div>
+        <div class="right-elements">
+            <ul class="mobile-nav-links">
+                <!-- Donate button on mobile -->
+                <a href="./donation.html" class="btn btn-primary"><li>Donate</li></a>
+                <li><i class="fa-solid fa-bars"></i></li> <!-- Hamburger menu icon -->
+            </ul>
+        </div>
+        <!-- Side navigation for mobile menu -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./volunteer.html">Join Us</a>
+            <a href="./blog.html">Blogs</a>
+            <a href="./campaign.html">Campaigns</a>
+            <a href="./contact-us.html">Contact</a>
+            <a href="./report.html">Report</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connect with Us to Create a Cleaner Future</h1>
+            <h4>We'd love to hear from you and answer your questions.</h4>
+        </div>
+    </section>
+    
+    <!-- Contact Section Heading -->
+    <section class="contact-section">
+        <h2>Contact us</h2>
+        <p>Connect with us for collaborations or inquiries.</p>
+    </section>
+    
+    <!-- Contact Form -->
+    <form class="info-form" novalidate>
+        <!-- Row for First and Last Name -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
+        
+        <!-- Row for Email and Phone -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </div>
+        
+        <!-- Topic Dropdown -->
+        <div class="form-group">
+            <label for="topic">Choose a topic</label>
+            <div class="select-wrapper">
+                <select id="topic" name="topic">
+                    <option value="">Select one...</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="inquiry">Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Message Box -->
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+        </div>
+        
+        <!-- Terms and Conditions Checkbox -->
+        <div class="form-check">
+            <input type="checkbox" id="terms">
+            <label for="terms">I accept the Terms</label>
+        </div>
+        
+        <!-- Submit Button (currently just a link) -->
+        <a id="submit-btn" class="btn btn-primary" href="#">Submit</a>
+    </form>
+    
+    <!-- Contact Information Cards -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope fa-xl"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Email us at the address given below for any inquiry.</p>
+                    <a href="mailto:cleanfutureinitiative@gmail.com">cleanfutureinitiative@gmail.com</a>
+                </div>
+                
+                <!-- Message Card -->
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-comment fa-xl"></i>
+                    </div>
+                    <h3>Message</h3>
+                    <p>Message us at the number given below for any inquiry.</p>
+                    <a href="tel:+1(555)000-0000">+1 (555) 000-0000</a>
+                </div>
+                
+                <!-- Phone/Address Card -->
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone fa-xl"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Call us at the address given below for any inquiry.</p>
+                    <address>123 Sample St, Sydney NSW 2000 AU</address>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Top with Logo -->
+        <div class="footer-top footer-line">
+            <div class="footer-logo">
+                <img src="../assets/footer-logo.png" alt="Clean Future Initiative Logo">
+            </div>
+        </div>
+        
+        <!-- Footer Links Section -->
+        <div class="footer-links">
+            <!-- Newsletter Subscription -->
+            <div class="newsletter">
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <form class="subscribe-form">
+                    <div class="form-row">
+                        <div class="email-wrapper"> 
+                            <input type="email" id="footer-email" placeholder="Enter your email">
+                            <div class="footer-error">
+                                <div id="footer-email-error" class="error-message">Please enter your email</div>
+                                <div id="footer-email-error-format" class="error-message">Please enter a valid email address</div>
+                            </div>
+                        </div>
+                        <a id="footer-submit" class="btn btn-secondary" href="#">Subscribe</a>
+                    </div>
+                </form>
+                <p class="privacy-note">By subscribing you agree to our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+            </div>
+            
+            <!-- About Us Links -->
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="../html/volunteer.html">Join Us</a></li>
+                    <li><a href="../html/campaign.html">Mission</a></li>
+                    <li><a href="../html/contact-us.html">Contact Us</a></li>
+                    <li><a href="../html/donation.html">Donate</a></li>
+                </ul>
+            </div>
+            
+            <!-- Pages Links -->
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../html/campaign.html">Campaigns</a></li>
+                    <li><a href="../html/campaign-detail.html">Impact</a></li>
+                    <li><a href="../html/blog.html">Blogs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Line -->
+        <div class="footer-line">
+            <p>© 2025 Clean Future Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Success Popup for Contact Form Submission -->
+    <div id="success-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span id="success-popup-close-btn" class="close-popup">&times;</span>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. We'll get back to you soon!</p>
+            <button id="popup-close-btn" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+    
+    <!-- Success Popup for Newsletter Subscription -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Thank You for Subscribing!</h3>
+            <p>You've successfully subscribed to our newsletter. Stay tuned for updates, stories, and ways to make an impact.</p>
+            <a id="close-btn" class="btn btn-primary" href="#">Close</a>
+        </div>
+    </div>
+    
+    <!-- External JavaScript Files -->
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/side-nav.js"></script>
+</body>
+</html>

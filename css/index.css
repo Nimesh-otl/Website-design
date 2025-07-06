@@ -1,0 +1,145 @@
+
+
+/* Styles the container holding buttons in the hero section */
+.hero-buttons {
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 25px; 
+}
+
+/* Styles the overall hero section layout */
+.hero-section {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 60px 8% 0;
+    text-align: center; 
+    height: 100vh; 
+}
+
+/* Sets a max width and spacing for the hero content area */
+.home-content {
+    max-width: 700px; 
+    margin-bottom: 30px; 
+}
+
+/* Styles the image inside the hero image container */
+.hero-image img {
+    max-height: 400px; 
+    border-radius: 8px; 
+}
+
+/* Styles the container for campaign cards */
+.campaign-cards {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) and (min-width:425px) {
+    .container{
+        width:700px;
+    }
+    .hero-section {
+        height:100vh;
+    }
+     
+    .hero-image img {
+        width:90%;
+    }
+    
+    /* Campaign Section */
+    .campaign-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .campaign-card {
+        margin-bottom: 20px;
+    }
+    
+    /* Partners Section */
+    .partner-logos .logo-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .partner-logos .logo-row img {
+        max-width: 100%;
+    }
+    
+    /* Blog Section */
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-card {
+        margin-bottom: 20px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
+
+/* Mobile Styles (425px and below) */
+@media screen and (max-width: 425px) {
+    /* Hero Section */
+    .hero-section {
+        height:100vh;
+    }
+    
+    .hero-image img {
+        width:100%;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Campaign Section */
+    .campaign-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .campaign-card {
+        margin-bottom: 20px;
+    }
+    
+    /* Partners Section */
+    .partner-logos .logo-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .partner-logos .logo-row img {
+        max-width: 100%;
+    }
+    
+    /* Blog Section */
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-card {
+        margin-bottom: 20px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+ 
+}
+

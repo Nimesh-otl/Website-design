@@ -1,0 +1,163 @@
+/* Styles the hero section with a background image */
+.hero {
+    background-image: url(../assets/report-header.png);
+}
+
+/* Adds vertical padding to the report section */
+.report-section {
+    padding: 80px 0;
+}
+
+/* Centers text within elements with the container class */
+.container {
+    text-align: center;
+}
+
+/* Styles paragraph elements within the report section container */
+.report-section > .container > p {
+    color: #555; 
+    margin-bottom: 40px; 
+}
+
+
+/* Media query for tablets (768px - 426px) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    .container {
+        width: 700px;
+    }
+    
+    /* Form layout adjustments */
+    .radio-options {
+        grid-template-columns: 1fr; /* Stack radio options in single column */
+    }
+    
+    /* Report section adjustments */
+    .report-section {
+        padding: 60px 5%;
+    }
+    
+    .info-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    /* Hero section adjustments */
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content {
+        max-width: 600px;
+    }
+    
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    
+    .hero h4 {
+        font-size: 1.1rem;
+    }
+    
+    /* Help section adjustments */
+    .help-section {
+        padding: 40px 5%;
+    }
+    
+    .help-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Navigation adjustments */
+    .main-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+/* Media query for mobile (425px and below) */
+@media screen and (max-width: 425px) {
+    .container{
+        width:375px;
+    }
+    
+    /* Form layout adjustments */
+    .radio-options {
+        grid-template-columns: 1fr; /* Stack radio options in single column */
+    }
+    
+    /* Report section adjustments */
+    .report-section {
+        padding: 30px 5%;
+    }
+    
+    .info-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    /* Hero section adjustments */
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-content {
+        max-width: 90%;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero h4 {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    
+    /* Help section adjustments */
+    .help-section {
+        padding: 30px 5%;
+    }
+    
+    .help-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    /* Navigation adjustments */
+    .main-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: flex;
+    }
+    
+    /* Button adjustments */
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    /* Form element adjustments */
+    .form-group input, 
+    .form-group select, 
+    textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    /* Form labels */
+    .form-group label {
+        font-size: 14px;
+    }
+    
+    /* Popup adjustments */
+    .popup-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+}

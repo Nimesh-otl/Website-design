@@ -1,0 +1,240 @@
+/* Blog post container with vertical padding */
+.blog-post {
+    padding: 60px 0;
+}
+
+/* Title of the blog post: centered, styled, and constrained in width */
+.post-title {
+    font-size: 36px;
+    color: #2c5545;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for the featured image with styling and max-width */
+.post-featured-image {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Featured image styling: full width, auto height, and cover fit */
+.post-featured-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Metadata section under the post title: aligned and centered */
+.post-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Author section with flex layout and spacing */
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Circular avatar image for the author */
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Author info stacked vertically */
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Author name in bold text */
+.author-name {
+    font-weight: bold;
+}
+
+/* Post date styled with smaller font and muted color */
+.post-date {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Main content area for the blog post with typography styling */
+.post-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Paragraphs inside content with spacing */
+.post-content p {
+    margin-bottom: 20px;
+}
+
+/* Additional images in post with margin and rounded corners */
+.post-image {
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Styling for images inside the post-image container */
+.post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Call-to-action section with vertical padding and center alignment */
+.cta-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Heading for CTA section with size and color */
+.cta-section h2 {
+    font-size: 32px;
+    color: #2c5545;
+    margin-bottom: 15px;
+}
+
+/* Paragraph in CTA section with larger font and spacing */
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+
+
+/* Media Query for Tablets (between 768px and 426px) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    /* Blog post container adjustments */
+    .blog-post {
+        padding: 40px 0;
+    }
+    
+    .post-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+        max-width: 90%;
+    }
+    
+    .post-featured-image {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+    
+    .post-meta {
+        max-width: 90%;
+        margin-bottom: 25px;
+    }
+    
+    .post-content {
+        max-width: 90%;
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 0 15px;
+    }
+    
+    .post-image {
+        margin: 25px 0;
+    }
+    
+    /* CTA section adjustments */
+    .cta-section {
+        padding: 40px 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .cta-section p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Query for Mobile (max-width 425px) */
+@media screen and (max-width: 425px) {
+    /* Blog post container adjustments */
+    .blog-post {
+        padding: 30px 0;
+    }
+    
+    .post-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        max-width: 95%;
+    }
+    
+    .post-featured-image {
+        max-width: 95%;
+        margin-bottom: 15px;
+    }
+    
+    .post-meta {
+        max-width: 95%;
+        margin-bottom: 20px;
+    }
+    
+    .author-avatar {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .author-name {
+        font-size: 14px;
+    }
+    
+    .post-date {
+        font-size: 12px;
+    }
+    
+    .post-content {
+        max-width: 95%;
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+    
+    .post-content p {
+        margin-bottom: 15px;
+    }
+    
+    .post-image {
+        margin: 20px 0;
+    }
+    
+    /* CTA section adjustments */
+    .cta-section {
+        padding: 30px 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .cta-section p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    
+}

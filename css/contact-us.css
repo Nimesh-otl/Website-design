@@ -1,0 +1,167 @@
+/* Sets the background image for the hero section */
+.hero {
+    background-image: url(../assets/contact-us-header.png);
+}
+
+/* Styles the main contact section with padding and centered text */
+.contact-section {
+    padding: 80px 0px 20px, 0px; 
+    text-align: center;
+}
+
+/* Styles the heading in the contact section */
+.contact-section h2 {
+    color: #2c5a43; 
+    margin-bottom: 15px; 
+}
+
+/* Styles the container for contact content in a vertical layout */
+.contact-container {
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+    padding-bottom: 30px; 
+}
+
+/* Overrides default container to use flex layout with space between elements */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Adds padding around the contact info section */
+.contact-info {
+    padding: 80px 0;
+}
+
+/* Styles the container for contact cards */
+.contact-cards {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 30px;
+}
+
+/* Styles each individual contact card */
+.contact-card {
+    flex: 1; /* Allows cards to grow equally */
+    background-color: white; /* Card background */
+    padding: 30px; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+/* Styles the icon inside the contact card */
+.icon {
+    color: #2c5a43; 
+    margin-bottom: 20px; 
+}
+
+/* Styles the heading inside each contact card */
+.contact-card h3 {
+    margin-bottom: 15px;
+}
+
+/* Styles paragraph text inside contact cards */
+.contact-card p {
+    margin-bottom: 15px;
+}
+
+/* Styles links and addresses inside contact cards */
+.contact-card a,
+.contact-card address {
+    color: #2c5a43; /* Green color for text links and addresses */
+}
+
+
+/* Media Query for Tablets (768px to 425px) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    /* Container size */
+    .container {
+        width: 700px;
+    }
+    
+    /* Contact cards layout for tablets */
+    .contact-cards {
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    
+    /* Adjust contact section spacing */
+    .contact-section {
+        padding: 60px 5% 10px;
+    }
+    
+    /* Form layout adjustments */
+    .info-form {
+        max-width: 500px;
+        padding: 15px;
+    }
+    
+    /* Hero section adjustments */
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    /* Contact info section padding */
+    .contact-info {
+        padding: 60px 5%;
+    }
+}
+
+/* Media Query for Mobile (425px and below) */
+@media screen and (max-width: 426px) {
+   /* Container size */
+   .container {
+    width: 400px;
+}
+
+/* Contact cards layout for tablets */
+.contact-cards {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Adjust contact section spacing */
+.contact-section {
+    padding: 60px 5% 10px;
+}
+
+/* Form layout adjustments */
+.info-form {
+    max-width: 500px;
+    padding: 15px;
+}
+
+/* Hero section adjustments */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+}
+
+.hero-content h4 {
+    font-size: 1.1rem;
+}
+
+/* Contact info section padding */
+.contact-cards{
+    flex-direction: column;
+}
+.contact-info {
+    padding: 60px 5%;
+}
+}

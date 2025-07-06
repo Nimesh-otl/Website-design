@@ -1,0 +1,289 @@
+/* ===================== TEAM SECTION ===================== */
+.team-intro {
+    text-align: center; /* Center-align team section content */
+    padding: 60px 8%;  
+}
+
+.team-grid {
+    display: flex; /* Flex layout for responsive design */
+    flex-wrap: wrap; /* Wrap items to next line if needed */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px; /* Space between team members */
+    margin-top: 40px; /* Space above the team grid */
+}
+
+.team-member {
+    flex: 0 0 calc(33.333% - 30px); /* 3 columns with gap space accounted */
+    min-width: 250px; /* Minimum card width */
+    max-width: 350px; /* Maximum card width */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 30px; /* Space below each card */
+}
+
+.team-member img {
+    width: 100%; /* Full width image */
+    height: 230px; /* Fixed height */
+    border-radius: 8px 8px 0 0; /* Round only top corners */
+}
+
+.member-info {
+    padding: 20px; /* Padding inside the info box */
+}
+
+.member-info h3 {
+    margin-bottom: 5px; /* Space below name */
+    font-size: 1.2rem; /* Name size */
+}
+
+.role {
+    font-weight: bold; /* Emphasize role */
+    color: #2c5545; /* Custom role color */
+    margin-bottom: 10px; /* Space below role */
+}
+
+.bio {
+    font-size: 0.9rem; /* Smaller font for bio */
+    margin-bottom: 15px; /* Space below bio */
+    line-height: 1.4; 
+}
+
+.social-links {
+    display: flex; /* Horizontal layout for icons */
+    margin: 5px 0; /* Vertical spacing */
+    gap: 15px; /* Space between icons */
+}
+
+/* ===================== JOURNEY SECTION ===================== */
+.journey {
+    padding: 60px 8%; /* Uniform section padding */
+    text-align: center; /* Center-align content */
+}
+
+/* ===================== AWARDS SECTION ===================== */
+.awards {
+    padding: 60px 8%; /* Uniform section padding */
+    text-align: center; /* Center-align content */
+}
+
+.awards-grid {
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Wrap items if needed */
+    gap: 30px; /* Gap between awards */
+    margin-top: 40px; /* Space above the grid */
+}
+
+.award {
+    flex: 1; /* Grow to fill space equally */
+    min-width: 280px; /* Minimum width for responsiveness */
+    padding: 25px; /* Inner spacing */
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.award img {
+    width: 80px; /* Fixed icon size */
+    height: 80px;
+    margin-bottom: 20px; /* Space below icon */
+}
+
+.award h3 {
+    margin-bottom: 15px; /* Space below title */
+}
+
+.award p {
+    font-size: 0.95rem; /* Paragraph text size */
+}
+
+/* ===================== WORK HIGHLIGHTS ===================== */
+.work-highlights {
+    padding: 60px 8%; /* Uniform section padding */
+}
+
+.section header {
+    text-align: center; /* Center-align section headers */
+}
+
+/* ===================== TIMELINE SLIDER ===================== */
+.timeline {
+    display: flex; /* Row layout */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between items */
+    margin: 40px 0; /* Vertical spacing */
+}
+
+.timeline-items {
+    display: flex; /* Row layout for slider items */
+    flex-grow: 1; /* Expand to fill remaining space */
+    overflow: hidden; /* Hide overflowing items */
+}
+
+.timeline-item {
+    flex: 0 0 calc(100% / 3); /* 3 items shown */
+    padding: 0 10px; /* Side padding */
+    box-sizing: border-box; /* Include padding in width */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.timeline-item img {
+    width: 200px; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    object-fit: cover; /* Ensure image fills space */
+    aspect-ratio: 16/9; /* Maintain video-like ratio */
+}
+
+/* ===================== TABLET MEDIA QUERY ===================== */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    /* Custom column widths for tablet breakpoints */
+    .col-md-1  { width: 12.5%; }
+    .col-md-2  { width: 25%; }
+    .col-md-3  { width: 37.5%; }
+    .col-md-4  { width: 50%; }
+    .col-md-5  { width: 62.5%; }
+    .col-md-6  { width: 75%; }
+    .col-md-7  { width: 87.5%; }
+    .col-md-8  { width: 100%; }
+
+    /* Adjust team grid for tablet (2 per row) */
+    .team-grid {
+        gap: 20px;
+    }
+
+    .team-member {
+        flex: 0 0 calc(50% - 20px);
+        min-width: 220px;
+    }
+
+    /* Show 2 timeline items */
+    .timeline-item {
+        flex: 0 0 50%;
+    }
+
+    /* Awards: 2 per row */
+    .awards-grid {
+        gap: 20px;
+    }
+
+    .award {
+        flex: 0 0 calc(50% - 20px);
+        min-width: 250px;
+    }
+
+    /* Center campaign cards */
+    .campaign-grid {
+        justify-content: center;
+    }
+
+    .campaign-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    /* 2 logos per row */
+    .partner-logos .logo-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .partner-logos .logo-row img {
+        max-width: 100%;
+    }
+}
+
+/* ===================== MOBILE MEDIA QUERY ===================== */
+@media screen and (max-width: 426px) {
+    .container {
+        width: 375px; /* Fixed container width for small screens */
+    }
+
+    /* Compact section padding */
+    section, .other-hero {
+        padding: 40px 5%;
+    }
+
+    /* Adjust heading sizes for small devices */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    /* Compact team section */
+    .team-intro {
+        padding: 40px 5%;
+    }
+
+    .team-grid {
+        gap: 15px;
+    }
+
+    .team-member {
+        flex: 0 0 100%; /* Full width */
+        min-width: 100%;
+    }
+
+    .team-member img {
+        height: 200px; /* Slightly reduced height */
+    }
+
+    /* Journey section stacked layout */
+    .journey {
+        padding: 40px 5%;
+    }
+
+    .timeline-container {
+        display: flex;
+        flex-direction: column; /* Stack timeline items vertically */
+    }
+
+    .timeline-item {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .timeline-item img {
+        width: 275px; /* Full width image */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Rounded corners */
+        object-fit: cover; /* Ensure image fills space */
+        aspect-ratio: 16/9; /* Maintain video-like ratio */
+    }
+
+    /* Awards: 1 per row */
+    .awards {
+        padding: 40px 5%;
+    }
+
+    .award {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    /* Work Highlights section */
+    .work-highlights {
+        padding: 40px 5%;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .campaign-card {
+        flex: 0 0 100%;
+    }
+
+    /* Partner logos grid */
+    .partner-logos .logo-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .partner-logos .logo-row img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,180 @@
+/* Grid layout for blog posts with wrapping, spacing, and centered alignment */
+.blog-grid {
+    display: flex;          
+    flex-wrap: wrap;           
+    gap: 20px;                
+    height: 100%;               
+    justify-content: center;  
+    max-width: 1200px;          
+}
+
+/* Individual blog card with automatic height */
+.blog-card {
+    height: auto;               /* Height adapts to content */
+}
+
+/* Newsletter section container with centered content */
+.newsletter-section {
+    max-width: 1200px;         
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;      
+    text-align: center;        
+}
+
+/* Heading inside the newsletter section with styling */
+.newsletter-section h2 {
+    font-size: 32px;            
+    color: #2c5545;          
+    margin-bottom: 15px;       
+}
+
+/* Paragraph in the newsletter section with constrained width and muted color */
+.newsletter-section p {
+    max-width: 600px;      
+    margin: 0 auto 30px;       
+    color: #666;               
+}
+
+/* Form layout for newsletter subscription with spacing */
+.newsletter-form {
+    display: flex;             
+    max-width: 500px;         
+    margin: 0 auto;          
+    gap: 10px;            
+}
+
+/* Input field styling inside the newsletter form */
+.newsletter-form input {
+    flex: 1;                    
+    padding: 12px 15px;        
+    border: 1px solid #ddd;     
+    border-radius: 4px;         
+    font-size: 16px;            
+}
+
+
+/* Tablet View (768px to 426px) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    /* Blog Grid Adjustments */
+    .blog-grid {
+        max-width: 700px;
+        margin: 0 auto;
+        gap: 15px;
+    }
+    
+    .blog-card {
+        flex: 0 0 calc(50% - 15px); /* Two columns for tablets */
+        min-width: 300px;
+    }
+    
+    /* Newsletter Section Adjustments */
+    .newsletter-section {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 28px;
+    }
+    
+    .newsletter-form {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .newsletter-form .btn {
+        width: 100%;
+    }
+    
+    /* Other Hero Section */
+    .other-hero {
+        padding: 40px 5%;
+    }
+    
+    .other-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile View (max-width: 425px) */
+@media screen and (max-width: 425px) {
+    /* Blog Grid Adjustments */
+    .blog-grid {
+        max-width: 100%;
+        gap: 20px;
+    }
+    
+    .blog-card {
+        flex: 0 0 100%; /* Single column for mobile */
+        min-width: unset;
+    }
+    
+    .blog-card img {
+        height: 180px;
+    }
+    
+    .blog-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Newsletter Section Adjustments */
+    .newsletter-section {
+        padding: 30px 15px;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 24px;
+    }
+    
+    .newsletter-section p {
+        font-size: 0.9rem;
+    }
+    
+    .newsletter-form {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .newsletter-form .btn {
+        width: 100%;
+    }
+    
+    /* Other Hero Section */
+    .other-hero {
+        padding: 30px 5%;
+    }
+    
+    .other-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .other-hero p {
+        font-size: 0.9rem;
+    }
+    
+    /* Blog Author Information */
+    .blog-author img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .author-name {
+        font-size: 0.9rem;
+    }
+    
+    .post-date {
+        font-size: 0.8rem;
+    }
+}

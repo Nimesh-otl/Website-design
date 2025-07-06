@@ -1,0 +1,265 @@
+/* Sets the background image for the hero section */
+.hero {
+  background-image: url(../assets/donation-header.png);
+}
+
+/* Styles the hall of fame section with padding and centered text */
+.hall-of-fame {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Styles the heading in the hall of fame section */
+.hall-of-fame h2 {
+  color: #3a5a47; 
+  font-size: 2rem; 
+  margin-bottom: 15px; 
+}
+
+/* Adds spacing below the paragraph in the hall of fame section */
+.hall-of-fame > p {
+  margin-bottom: 40px;
+}
+
+/* Styles the container for donor cards */
+.donors-container {
+  margin-top: 20px; 
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+/* Styles each individual donor card */
+.donor-card {
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  width: 300px;
+  display: flex; 
+  flex-direction: column;
+}
+
+/* Styles the container for donor image and details */
+.donor-info {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+/* Styles the donor image */
+.donor-img {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  margin-right: 15px; 
+}
+
+/* Aligns donor details to the left */
+.donor-details {
+  text-align: left;
+}
+
+/* Styles the donation amount text */
+.donation-amount {
+  font-weight: bold; /* Makes text bold */
+  margin-top: 5px; 
+}
+
+/* Styles the thank-you message section in donor cards */
+.donation-thank-you {
+  margin-top: auto; /* Pushes this section to the bottom */
+  padding-top: 10px;
+  border-top: 1px solid #ddd; /* Top border separator */
+}
+
+/* Styles the payment section layout */
+.payment-section {
+  padding: 60px 0;
+}
+
+/* Styles the heading in the payment section */
+.payment-section h2 {
+  color: #3a5a47; /* Dark green color */
+  font-size: 2rem; 
+  text-align: center; 
+  margin-bottom: 40px; 
+}
+
+/* Styles the section with more donation options */
+.more-ways {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Styles the heading in the more ways section */
+.more-ways h2 {
+  color: #3a5a47;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Adds spacing below the paragraph in the more ways section */
+.more-ways p {
+  margin-bottom: 30px;
+}
+
+/* Styles the container for the join button */
+.join-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Tablet Media Query (768px - 426px) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .container {
+    width: 700px;
+  }
+  
+  /* Hall of Fame section */
+  .hall-of-fame {
+    padding: 40px 0;
+  }
+  
+  .donors-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .donor-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  /* Payment section */
+  .payment-section {
+    padding: 40px 0;
+  }
+  
+  .info-form {
+    max-width: 90%;
+  }
+  
+  /* Form rows may need to be adjusted for certain fields */
+  .form-row {
+    flex-wrap: wrap;
+  }
+  
+  .form-row .form-group {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 200px;
+  }
+  
+  /* Form actions */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Help section */
+  .help-section {
+    padding: 40px 5%;
+  }
+}
+
+/* Mobile Media Query (425px and below) */
+@media screen and (max-width: 425px) {
+  .container{
+    width:375px;
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: 40px 5%;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero h4 {
+    font-size: 1rem;
+  }
+  
+  /* Hall of Fame section */
+  .hall-of-fame {
+    padding: 30px 0;
+  }
+  
+  .hall-of-fame h2 {
+    font-size: 1.6rem;
+  }
+  
+  .donors-container {
+    flex-direction: column;
+  }
+  
+  .donor-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Payment section */
+  .payment-section {
+    padding: 30px 0;
+  }
+  
+  .payment-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .info-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+  
+  /* Form layout adjustments */
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-row .form-group {
+    width: 100%;
+  }
+  
+  /* Form actions */
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .form-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Help section */
+  .help-section {
+    padding: 30px 5%;
+  }
+  
+  .help-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Donor info section */
+  .donor-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .donor-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .donor-details {
+    text-align: center;
+  }
+}
